@@ -1,0 +1,5 @@
+<div>
+    <div class="show-list" *ngFor="let i of todoslist">
+    <app-todo [task]="i.task" [id]="i.id" (deleting)="del($event)"></app-todo>
+    </div>
+</div>
